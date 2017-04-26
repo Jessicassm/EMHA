@@ -1,0 +1,20 @@
+[InodeSvr role in Cluster <Master | Backup>]
+status: Master
+[High availablity object ProcessName]
+AppName: httpd
+[Virual ip address for HA]
+vip: 192.168.17.252
+[Master InnodeSvr physical Ip Address]
+Mip: 192.168.17.21
+[Backup InnodeSvr physical Ip Address]
+Bip: 192.168.17.22
+[HA Listenning Port <must be Int_Type>]
+port: 9999
+[HA LogFile's absolute path]
+LogPath: /var/log/Ha/
+[HA LogFile's name]
+LogName: Ha
+[NetworkInterface's name which binds vip]
+NetInt: eth0:255
+[DownStream InodeSvr Ip Address]
+DnStr: 192.168.17.17;192.168.17.18;192.168.17.1
